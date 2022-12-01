@@ -11,21 +11,14 @@ const checkNumberIsEven = () => {
     const number = getRandomNumber();
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (number % 2 === 0) {
-      if (userAnswer === 'yes') {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`);
-        return;
-      }
-    }
-    if ((number % 2 !== 0)) {
-      if (userAnswer === 'no') {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${userName}!`);
-        return;
-      }
+    const validation1 = ((number % 2 === 0) && (userAnswer === 'yes'));
+    const validation2 = ((number % 2 !== 0) && (userAnswer === 'no'));
+    if (validation1 === true || validation2 === true) {
+      console.log('Correct!');
+    } else {
+      const correctAnswer = (userAnswer === 'yes' ? 'no' : 'yes');
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
