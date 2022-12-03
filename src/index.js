@@ -14,14 +14,12 @@ const engine = (rulesOfTheGame, taskForTheRound) => {
     const rightAnswer = taskData[1];
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
-      if (i === 2) {
-        console.log(`Congratulations, ${userName}!`);
-      }
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`);
       return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default engine;
