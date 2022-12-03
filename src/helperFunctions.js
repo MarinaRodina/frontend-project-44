@@ -1,11 +1,5 @@
-const getRandomNumberUpToHundred = () => {
-  const maxNumberToCheck = 100;
-  const getNumber = (Math.floor(Math.random() * maxNumberToCheck));
-  return getNumber;
-};
-
-const getRandomNumberUpToTwenty = () => {
-  const maxNumberToCheck = 20;
+const getRandomNumber = () => {
+  const maxNumberToCheck = 25;
   const getNumber = (Math.floor(Math.random() * maxNumberToCheck));
   return getNumber;
 };
@@ -17,4 +11,4 @@ const getRamdomOperator = () => {
   return getOperator;
 };
 
-export { getRandomNumberUpToHundred, getRandomNumberUpToTwenty, getRamdomOperator };
+export { getRandomNumber, getRamdomOperator };

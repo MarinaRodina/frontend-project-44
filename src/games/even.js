@@ -1,10 +1,10 @@
 import engine from '../index.js';
-import { getRandomNumberUpToHundred } from '../helperFunctions.js';
+import { getRandomNumber } from '../helperFunctions.js';
 
 const checkNumberIsEven = () => {
   const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
   const taskEven = () => {
-    const number = getRandomNumberUpToHundred();
+    const number = getRandomNumber();
     const isEven = (num) => num % 2 === 0;
     const question = `${number}`;
     const result = (isEven(number) ? 'yes' : 'no');

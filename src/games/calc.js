@@ -1,11 +1,11 @@
 import engine from '../index.js';
-import { getRandomNumberUpToTwenty, getRamdomOperator } from '../helperFunctions.js';
+import { getRandomNumber, getRamdomOperator } from '../helperFunctions.js';
 
 const calculator = () => {
   const noteToCalc = 'What is the result of the expression?';
   const taskCalc = () => {
-    const number1 = getRandomNumberUpToTwenty();
-    const number2 = getRandomNumberUpToTwenty();
+    const number1 = getRandomNumber();
+    const number2 = getRandomNumber();
     const operator = getRamdomOperator();
     let result;
     switch (operator) {
