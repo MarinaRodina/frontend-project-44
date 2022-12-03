@@ -4,8 +4,8 @@ import { getRandomNumber, getRamdomOperator } from '../helperFunctions.js';
 const calculator = () => {
   const noteToCalc = 'What is the result of the expression?';
   const taskCalc = () => {
-    const number1 = getRandomNumber();
-    const number2 = getRandomNumber();
+    const number1 = getRandomNumber(20);
+    const number2 = getRandomNumber(20);
     const operator = getRamdomOperator();
     let result;
     switch (operator) {

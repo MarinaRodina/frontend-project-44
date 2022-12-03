@@ -1,9 +1,5 @@
-const getRandomNumber = () => {
-  const maxNumberToCheck = 25;
-  // + 1, чтобы не было передано в функцию 0 //
-  const getNumber = (Math.floor(Math.random() * maxNumberToCheck) + 1);
-  return getNumber;
-};
+// добавим + 1, чтобы в числа не попал 0 //
+const getRandomNumber = (maxNumber) => (Math.floor(Math.random() * maxNumber) + 1);
 
 const getRamdomOperator = () => {
   const operators = ['+', '-', '*'];

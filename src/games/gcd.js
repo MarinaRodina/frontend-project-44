@@ -4,8 +4,8 @@ import { getRandomNumber } from '../helperFunctions.js';
 const getGreatestCommonDivisor = () => {
   const noteDivisor = 'Find the greatest common divisor of given numbers.';
   const taskDivisor = () => {
-    const number1 = getRandomNumber();
-    const number2 = getRandomNumber();
+    const number1 = getRandomNumber(50);
+    const number2 = getRandomNumber(50);
 
     const divisors = [];
     const getDivisor = () => {
