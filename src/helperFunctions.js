@@ -1,6 +1,7 @@
 const getRandomNumber = () => {
   const maxNumberToCheck = 25;
-  const getNumber = (Math.floor(Math.random() * maxNumberToCheck));
+  // + 1, чтобы не было передано в функцию 0 //
+  const getNumber = (Math.floor(Math.random() * maxNumberToCheck) + 1);
   return getNumber;
 };
 
