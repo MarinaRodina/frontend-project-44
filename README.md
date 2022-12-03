@@ -3,9 +3,9 @@
 
 ## **Brain Even**
 
-[![asciicast](https://asciinema.org/a/541657.svg)](https://asciinema.org/a/541657)
+[![asciicast](https://asciinema.org/a/2oN4xBZrkIg40GLblq8oHLr0J.svg)](https://asciinema.org/a/2oN4xBZrkIg40GLblq8oHLr0J)
 
 
 ## **Brain Calc**
 
-[![asciicast](https://asciinema.org/a/4RRZ9ceaGKj1d7wiGjBTf4xd0.svg)](https://asciinema.org/a/4RRZ9ceaGKj1d7wiGjBTf4xd0)
+[![asciicast](https://asciinema.org/a/UiKLWAEGcXBYARwJ33w0RBfO4.svg)](https://asciinema.org/a/UiKLWAEGcXBYARwJ33w0RBfO4)
