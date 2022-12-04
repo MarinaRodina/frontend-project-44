@@ -2,7 +2,7 @@ import engine from '../index.js';
 import { getRandomNumber } from '../helperFunctions.js';
 
 const getMissingNumber = () => {
-  const noteProgression = 'What number is missing in the progression?.';
+  const noteProgression = 'What number is missing in the progression?';
   const taskProgression = () => {
     const number = getRandomNumber(50);
     const getNumberArray = () => {
@@ -20,13 +20,11 @@ const getMissingNumber = () => {
     const array = getNumberArray(); // получаем массив цифр//
     const randomIndex = getRandomNumber(8);
     const hiddenNumber = array[randomIndex];
-    const result = hiddenNumber.toString(); // получаем верный ответ //
     const firstPartArrya = array.slice(0, randomIndex);
     const secondPartArrya = array.slice(randomIndex + 1);
     const firstPartNumbers = firstPartArrya.join(' ');
     const secondParNumbers = secondPartArrya.join(' ');
-    const question = `${firstPartNumbers} .. ${secondParNumbers}`; // получаем вопрос //
-    return [question, result];
+    return [`${firstPartNumbers} .. ${secondParNumbers}`, hiddenNumber.toString()];
   };
   engine(noteProgression, taskProgression);
 };
