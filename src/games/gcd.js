@@ -19,11 +19,9 @@ const getGreatestCommonDivisor = () => {
       }
       return divisors;
     };
-
     const generalDividor = getDivisor(); // крайний элемент массива самый большой//
-    let result;
-    result = generalDividor.pop();
-    result = result.toString();
+    const lastElement = generalDividor.pop();
+    const result = lastElement.toString();
     const question = `${number1} ${number2}`;
     return [question, result];
   };

@@ -6,7 +6,7 @@ const getMissingNumber = () => {
   const taskProgression = () => {
     const number = getRandomNumber(50);
     const getNumberArray = () => {
-      let numberArray = [];
+      const numberArray = [];
       let num = number;
       let count = 1;
       const step = getRandomNumber(5);
@@ -21,7 +21,6 @@ const getMissingNumber = () => {
     const randomIndex = getRandomNumber(8);
     const hiddenNumber = array[randomIndex];
     const result = hiddenNumber.toString(); // получаем верный ответ //
-
     const firstPartArrya = array.slice(0, randomIndex);
     const secondPartArrya = array.slice(randomIndex + 1);
     const firstPartNumbers = firstPartArrya.join(' ');
