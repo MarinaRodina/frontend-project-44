@@ -6,12 +6,9 @@ const checkNumberIsPrime = () => {
   const taskPrime = () => {
     const number = getRandomNumber(50);
     const isPrime = (num) => {
-      if (num < 2) {
-        return false;
-      }
       let divisor = 2;
       while (divisor <= num / 2) {
-        if (num % divisor === 0) {
+        if (num % divisor === 0 || num < 2) {
           return false;
         }
         divisor += 1;
