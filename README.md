@@ -19,3 +19,8 @@
 ## **Game 'brain-progression':**
 
 [![asciicast](https://asciinema.org/a/S8v3yt5S8rGn0GQ0kCN4ltMn6.svg)](https://asciinema.org/a/S8v3yt5S8rGn0GQ0kCN4ltMn6)
+
+
+## **Game 'brain-prime':**
+
+[![asciicast](https://asciinema.org/a/jBNMPPeI3HDGjtifNTUtwvn7t.svg)](https://asciinema.org/a/jBNMPPeI3HDGjtifNTUtwvn7t)
