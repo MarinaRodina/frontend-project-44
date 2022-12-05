@@ -2,10 +2,10 @@
 [![Actions Status](https://github.com/MarinaRodina/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MarinaRodina/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/93d5b06d72b717209b13/maintainability)](https://codeclimate.com/github/MarinaRodina/frontend-project-44/maintainability)
 
 
-## **Installation:**
-1. Clone the repository to your computer with "*git clone*"
-2. Set up all dependencies with "*npm ci*"
-3. Install the application using the command "*npm link*"
+# **Installation:**
+1. Clone the repository to your computer with "*git clone*".
+2. Set up all dependencies with "*npm ci*".
+3. Install the application using the command "*npm link*".
 4. Start the game.
 
 
