@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
 const startGameBrainGcd = () => {
@@ -24,7 +24,7 @@ const startGameBrainGcd = () => {
     const question = `${number1} ${number2}`;
     return [question, result];
   };
-  engine(noteBrainGcd, decideBrainGcd);
+  startGame(noteBrainGcd, decideBrainGcd);
 };
 
 export default startGameBrainGcd;
