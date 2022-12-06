@@ -8,7 +8,8 @@ const startGameBrainEven = () => {
   const decideBrainEven = () => {
     const number = getRandomNumber(100);
     const result = (isEven(number) ? 'yes' : 'no');
-    return [`${number}`, result];
+    const question = `${number}`;
+    return [question, result];
   };
   startGame(noteBrainEven, decideBrainEven);
 };
