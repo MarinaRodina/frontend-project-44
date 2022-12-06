@@ -7,7 +7,6 @@ const engine = (rulesOfTheGame, taskForTheRound) => {
   console.log(rulesOfTheGame);
   const numberOfRounds = 3;
   for (let i = 0; i < numberOfRounds; i += 1) {
-    // результат вызова функции taskForTheRound() - массив из вопроса и верного ответа: //
     const taskData = taskForTheRound();
     console.log(`Question: ${taskData[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');

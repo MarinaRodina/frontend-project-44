@@ -17,7 +17,7 @@ const getMissingNumber = () => {
       }
       return numberArray;
     };
-    const array = getNumberArray(); // получаем массив цифр//
+    const array = getNumberArray();
     const randomIndex = getRandomNumber(8);
     const hiddenNumber = array[randomIndex];
     const firstPartArrya = array.slice(0, randomIndex);
