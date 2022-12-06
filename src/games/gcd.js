@@ -1,9 +1,9 @@
 import engine from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
-const getGreatestCommonDivisor = () => {
-  const noteDivisor = 'Find the greatest common divisor of given numbers.';
-  const taskDivisor = () => {
+const startGameBrainGcd = () => {
+  const noteBrainGcd = 'Find the greatest common divisor of given numbers.';
+  const decideBrainGcd = () => {
     const number1 = getRandomNumber(50);
     const number2 = getRandomNumber(50);
     const divisors = [];
@@ -24,7 +24,7 @@ const getGreatestCommonDivisor = () => {
     const question = `${number1} ${number2}`;
     return [question, result];
   };
-  engine(noteDivisor, taskDivisor);
+  engine(noteBrainGcd, decideBrainGcd);
 };
 
-export default getGreatestCommonDivisor;
+export default startGameBrainGcd;

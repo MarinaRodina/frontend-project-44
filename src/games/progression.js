@@ -1,9 +1,9 @@
-import engine from '../index.js';
+import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
-const getMissingNumber = () => {
-  const noteProgression = 'What number is missing in the progression?';
-  const taskProgression = () => {
+const startGameBrainProgression = () => {
+  const noteBrainProgression = 'What number is missing in the progression?';
+  const decideBrainProgression = () => {
     const number = getRandomNumber(50);
     const step = getRandomNumber(5);
     const getNumberArray = () => {
@@ -26,7 +26,7 @@ const getMissingNumber = () => {
     const secondParNumbers = secondPartArrya.join(' ');
     return [`${firstPartNumbers} .. ${secondParNumbers}`, hiddenNumber.toString()];
   };
-  engine(noteProgression, taskProgression);
+  startGame(noteBrainProgression, decideBrainProgression);
 };
 
-export default getMissingNumber;
+export default startGameBrainProgression;

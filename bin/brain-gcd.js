@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import getGreatestCommonDivisor from '../src/games/gcd.js';
+import startGameBrainGcd from '../src/games/gcd.js';
 
-getGreatestCommonDivisor();
+startGameBrainGcd();

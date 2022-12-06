@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import checkNumberIsEven from '../src/games/even.js';
+import startGameBrainEven from '../src/games/even.js';
 
-checkNumberIsEven();
+startGameBrainEven();

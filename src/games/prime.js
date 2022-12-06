@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
 const isPrime = (num) => {
@@ -12,14 +12,14 @@ const isPrime = (num) => {
   return true;
 };
 
-const checkNumberIsPrime = () => {
-  const noteToPrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const taskPrime = () => {
+const startGameBrainPrime = () => {
+  const noteBrinePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const decideBrainPrime = () => {
     const number = getRandomNumber(50);
     const question = `${number}`;
     const result = (isPrime(number) ? 'yes' : 'no');
     return [question, result];
   };
-  engine(noteToPrime, taskPrime);
+  startGame(noteBrinePrime, decideBrainPrime);
 };
-export default checkNumberIsPrime;
+export default startGameBrainPrime;

@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
 const getRamdomOperator = () => {
@@ -8,9 +8,9 @@ const getRamdomOperator = () => {
   return getOperator;
 };
 
-const calculator = () => {
-  const noteToCalc = 'What is the result of the expression?';
-  const taskCalc = () => {
+const startGameBrainCalc = () => {
+  const noteBrainCalc = 'What is the result of the expression?';
+  const decideBrainCalc = () => {
     const number1 = getRandomNumber(20);
     const number2 = getRandomNumber(20);
     const operator = getRamdomOperator();
@@ -32,7 +32,7 @@ const calculator = () => {
     const question = `${number1} ${operator} ${number2}`;
     return [question, result];
   };
-  engine(noteToCalc, taskCalc);
+  startGame(noteBrainCalc, decideBrainCalc);
 };
 
-export default calculator;
+export default startGameBrainCalc;
