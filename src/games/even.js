@@ -7,9 +7,8 @@ const checkNumberIsEven = () => {
   const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
   const taskEven = () => {
     const number = getRandomNumber(100);
-    const question = `${number}`;
     const result = (isEven(number) ? 'yes' : 'no');
-    return [question, result];
+    return [`${number}`, result];
   };
   engine(noteToEven, taskEven);
 };
