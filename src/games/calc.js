@@ -1,5 +1,12 @@
 import engine from '../index.js';
-import { getRandomNumber, getRamdomOperator } from '../helperFunctions.js';
+import getRandomNumber from '../helperFunctions.js';
+
+const getRamdomOperator = () => {
+  const operators = ['+', '-', '*'];
+  const randomIndex = Math.floor(Math.random() * operators.length);
+  const getOperator = operators[randomIndex];
+  return getOperator;
+};
 
 const calculator = () => {
   const noteToCalc = 'What is the result of the expression?';

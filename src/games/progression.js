@@ -1,5 +1,5 @@
 import engine from '../index.js';
-import { getRandomNumber } from '../helperFunctions.js';
+import getRandomNumber from '../helperFunctions.js';
 
 const getMissingNumber = () => {
   const noteProgression = 'What number is missing in the progression?';
