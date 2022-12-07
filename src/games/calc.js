@@ -3,7 +3,8 @@ import getRandomNumber from '../helperFunctions.js';
 
 const getRamdomOperator = () => {
   const operators = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * operators.length);
+  const operatorslength = operators.length;
+  const randomIndex = (getRandomNumber(operatorslength) - 1);
   const getOperator = operators[randomIndex];
   return getOperator;
 };
