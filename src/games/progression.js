@@ -17,9 +17,9 @@ const startGameBrainProgression = () => {
   const noteBrainProgression = 'What number is missing in the progression?';
   const decideBrainProgression = () => {
     const number = getRandomNumber(50);
-    const step = getRandomNumber(5);
+    const step = getRandomNumber(5, 1);
     const array = getNumberArray(number, step);
-    const randomIndex = getRandomNumber(8);
+    const randomIndex = getRandomNumber(9);
     const hiddenNumber = array[randomIndex];
     array[randomIndex] = '..';
     const progression = array.join(' ');

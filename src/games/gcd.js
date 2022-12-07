@@ -17,8 +17,8 @@ const getDivisor = (num1, num2) => {
 const startGameBrainGcd = () => {
   const noteBrainGcd = 'Find the greatest common divisor of given numbers.';
   const decideBrainGcd = () => {
-    const number1 = getRandomNumber(50);
-    const number2 = getRandomNumber(50);
+    const number1 = getRandomNumber(50, 1);
+    const number2 = getRandomNumber(50, 1);
     const generalDividor = getDivisor(number1, number2);
     const lastElement = generalDividor.pop();
     const result = lastElement.toString();

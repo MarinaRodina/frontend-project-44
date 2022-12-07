@@ -4,7 +4,7 @@ import getRandomNumber from '../helperFunctions.js';
 const getRamdomOperator = () => {
   const operators = ['+', '-', '*'];
   const operatorslength = operators.length;
-  const randomIndex = (getRandomNumber(operatorslength) - 1);
+  const randomIndex = (getRandomNumber(operatorslength));
   const getOperator = operators[randomIndex];
   return getOperator;
 };
