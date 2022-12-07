@@ -2,9 +2,12 @@ import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
 const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
   let divisor = 2;
   while (divisor <= num / 2) {
-    if (num % divisor === 0 || num < 2) {
+    if (num % divisor === 0) {
       return false;
     }
     divisor += 1;
