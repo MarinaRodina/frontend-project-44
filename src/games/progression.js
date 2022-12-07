@@ -21,12 +21,10 @@ const startGameBrainProgression = () => {
     const array = getNumberArray(number, step);
     const randomIndex = getRandomNumber(8);
     const hiddenNumber = array[randomIndex];
-    const firstPartArrya = array.slice(0, randomIndex);
-    const secondPartArrya = array.slice(randomIndex + 1);
-    const firstPartNumbers = firstPartArrya.join(' ');
-    const secondParNumbers = secondPartArrya.join(' ');
+    array[randomIndex] = '..';
+    const progression = array.join(' ');
     const result = hiddenNumber.toString();
-    const question = `${firstPartNumbers} .. ${secondParNumbers}`;
+    const question = `${progression}`;
     return [question, result];
   };
   startGame(noteBrainProgression, decideBrainProgression);
