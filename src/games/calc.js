@@ -24,8 +24,9 @@ const calculate = (randomNumber1, randomNumber2, randomOperator) => {
   return count;
 };
 
+const noteBrainCalc = 'What is the result of the expression?';
+
 const startGameBrainCalc = () => {
-  const noteBrainCalc = 'What is the result of the expression?';
   const decideBrainCalc = () => {
     const number1 = getRandomNumber(20);
     const number2 = getRandomNumber(20);

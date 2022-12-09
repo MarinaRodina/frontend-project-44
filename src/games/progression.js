@@ -13,8 +13,9 @@ const getNumbers = (num1, step1) => {
   return numbers;
 };
 
+const noteBrainProgression = 'What number is missing in the progression?';
+
 const startGameBrainProgression = () => {
-  const noteBrainProgression = 'What number is missing in the progression?';
   const decideBrainProgression = () => {
     const number = getRandomNumber(50);
     const step = getRandomNumber(5, 1);

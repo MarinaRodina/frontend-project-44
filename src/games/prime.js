@@ -15,8 +15,9 @@ const isPrime = (num) => {
   return true;
 };
 
+const noteBrinePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const startGameBrainPrime = () => {
-  const noteBrinePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const decideBrainPrime = () => {
     const number = getRandomNumber(50);
     const question = `${number}`;
