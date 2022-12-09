@@ -1,16 +1,16 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
-const getNumberArray = (num1, step1) => {
-  const numberArray = [];
+const getNumbers = (num1, step1) => {
+  const numbers = [];
   let num = num1;
   let count = 1;
   while (count <= 10) {
-    numberArray.push(num);
+    numbers.push(num);
     num += step1;
     count += 1;
   }
-  return numberArray;
+  return numbers;
 };
 
 const startGameBrainProgression = () => {
@@ -18,7 +18,7 @@ const startGameBrainProgression = () => {
   const decideBrainProgression = () => {
     const number = getRandomNumber(50);
     const step = getRandomNumber(5, 1);
-    const array = getNumberArray(number, step);
+    const array = getNumbers(number, step);
     const randomIndex = getRandomNumber(9);
     const hiddenNumber = array[randomIndex];
     array[randomIndex] = '..';
