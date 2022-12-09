@@ -9,26 +9,28 @@ const getRamdomOperator = () => {
   return getOperator;
 };
 
+const calculate = (randomNumber1, randomNumber2, randomOperator) => {
+  let count;
+  switch (randomOperator) {
+    case '+':
+      count = (randomNumber1 + randomNumber2);
+      break;
+    case '-':
+      count = (randomNumber1 - randomNumber2);
+      break;
+    default:
+      count = (randomNumber1 * randomNumber2);
+  }
+  return count;
+};
+
 const startGameBrainCalc = () => {
   const noteBrainCalc = 'What is the result of the expression?';
   const decideBrainCalc = () => {
     const number1 = getRandomNumber(20);
     const number2 = getRandomNumber(20);
     const operator = getRamdomOperator();
-    let result;
-    switch (operator) {
-      case '+':
-        result = (number1 + number2);
-        break;
-      case '-':
-        result = (number1 - number2);
-        break;
-      case '*':
-        result = (number1 * number2);
-        break;
-      default:
-        result = null;
-    }
+    let result = calculate(number1, number2, operator);
     result = result.toString();
     const question = `${number1} ${operator} ${number2}`;
     return [question, result];
