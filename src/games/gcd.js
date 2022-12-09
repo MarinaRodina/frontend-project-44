@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helperFunctions.js';
 
-const getDivisor = (num1, num2) => {
+const getGreaterСommonDivisor = (num1, num2) => {
   const divisors = [];
   let divisor = 1;
   const minNumber = Math.min(num1, num2);
@@ -11,7 +11,7 @@ const getDivisor = (num1, num2) => {
     }
     divisor += 1;
   }
-  return divisors;
+  return divisors.pop();
 };
 
 const noteBrainGcd = 'Find the greatest common divisor of given numbers.';
@@ -20,9 +20,7 @@ const startGameBrainGcd = () => {
   const decideBrainGcd = () => {
     const number1 = getRandomNumber(50, 1);
     const number2 = getRandomNumber(50, 1);
-    const generalDividor = getDivisor(number1, number2);
-    const lastElement = generalDividor.pop();
-    const result = lastElement.toString();
+    const result = getGreaterСommonDivisor(number1, number2).toString();
     const question = `${number1} ${number2}`;
     return [question, result];
   };
