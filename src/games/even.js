@@ -9,7 +9,7 @@ const startGameBrainEven = () => {
   const decideBrainEven = () => {
     const number = getRandomNumber(100);
     const result = (isEven(number) ? 'yes' : 'no');
-    const question = `${number}`;
+    const question = number.toString();
     return [question, result];
   };
   startGame(noteBrainEven, decideBrainEven);

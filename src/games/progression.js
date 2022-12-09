@@ -25,7 +25,7 @@ const startGameBrainProgression = () => {
     array[randomIndex] = '..';
     const progression = array.join(' ');
     const result = hiddenNumber.toString();
-    const question = `${progression}`;
+    const question = progression.toString();
     return [question, result];
   };
   startGame(noteBrainProgression, decideBrainProgression);

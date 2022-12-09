@@ -20,7 +20,7 @@ const noteBrinePrime = 'Answer "yes" if given number is prime. Otherwise answer 
 const startGameBrainPrime = () => {
   const decideBrainPrime = () => {
     const number = getRandomNumber(50);
-    const question = `${number}`;
+    const question = number.toString();
     const result = (isPrime(number) ? 'yes' : 'no');
     return [question, result];
   };

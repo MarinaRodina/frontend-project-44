@@ -31,8 +31,7 @@ const startGameBrainCalc = () => {
     const number1 = getRandomNumber(20);
     const number2 = getRandomNumber(20);
     const operator = getRamdomOperator();
-    let result = calculate(number1, number2, operator);
-    result = result.toString();
+    const result = calculate(number1, number2, operator).toString();
     const question = `${number1} ${operator} ${number2}`;
     return [question, result];
   };
